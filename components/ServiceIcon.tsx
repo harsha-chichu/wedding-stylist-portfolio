@@ -1,0 +1,47 @@
+/** Minimal line-drawn icons for the service cards. */
+
+const PATHS: Record<string, string> = {
+  outfit:
+    "M16 5 C16 8 13 9 11 11 L5 24 L27 24 L21 11 C19 9 16 8 16 5 M11 11 C14 13 18 13 21 11",
+  necklace:
+    "M8 8 C8 15 12 20 16 22 C20 20 24 15 24 8 M16 22 L16 25 M13 27 A3 2.4 0 0 0 19 27 A3 2.4 0 0 0 13 27",
+  brush: "M22 5 L27 10 L12 25 L6 26 L7 20 Z M19 8 L24 13",
+  hair: "M16 4 C10 4 7 9 8 14 C9 19 13 21 13 25 L19 25 C19 21 23 19 24 14 C25 9 22 4 16 4 M12 25 L20 25 M13 28 L19 28",
+  flower:
+    "M16 6 C18 10 22 10 24 8 C24 14 20 16 16 16 C12 16 8 14 8 8 C10 10 14 10 16 6 M16 16 L16 26 M11 22 C13 20 15 20 16 21 M21 22 C19 20 17 20 16 21",
+  blouse:
+    "M10 6 L13 9 L16 6 L19 9 L22 6 L22 14 C22 20 19 24 16 26 C13 24 10 20 10 14 Z",
+  camera:
+    "M6 11 L10 11 L12 8 L20 8 L22 11 L26 11 L26 24 L6 24 Z M16 13 A4.5 4.5 0 1 0 16 22 A4.5 4.5 0 1 0 16 13",
+  wardrobe:
+    "M12 6 L16 9 L20 6 L25 9 L23 15 L21 13 L21 26 L11 26 L11 13 L9 15 L7 9 Z",
+  sherwani:
+    "M13 5 L16 8 L19 5 L21 7 L21 27 L11 27 L11 7 Z M16 8 L16 27 M13 12 L14.5 12 M13 16 L14.5 16",
+  suit: "M11 6 L16 11 L21 6 L25 8 L22 27 L10 27 L7 8 Z M16 11 L14 15 L16 24 L18 15 Z",
+  palette:
+    "M16 5 A11 11 0 1 0 16 27 C13 24 13 8 16 5 M5 16 L16 16 M7 10 L16 10 M7 22 L16 22",
+  fragrance: "M13 10 L13 6 L19 6 L19 10 M11 10 L21 10 L22 27 L10 27 Z M16 14 L16 22",
+  grooming:
+    "M8 20 C8 13 12 8 16 8 C20 8 24 13 24 20 M8 20 L8 24 M24 20 L24 24 M12 14 C14 12 18 12 20 14",
+};
+
+export default function ServiceIcon({
+  name,
+  className,
+}: {
+  name: string;
+  className?: string;
+}) {
+  return (
+    <svg className={className} viewBox="0 0 32 32" aria-hidden="true">
+      <path
+        d={PATHS[name] ?? PATHS.outfit}
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}

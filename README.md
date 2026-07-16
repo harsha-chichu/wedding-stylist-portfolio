@@ -6,38 +6,53 @@ Indian wedding — modern in structure, traditional Indian in soul.
 
 ## Stack
 
-Plain HTML, CSS, and vanilla JavaScript. No build step, no frameworks.
-Open `index.html` in a browser, or serve the folder:
+- **Next.js 16** (App Router, static export)
+- **Tailwind CSS 4**
+- **TypeScript** / React 19
+- `next/font` self-hosted Google Fonts (no runtime font CDN dependency)
 
 ```sh
-python3 -m http.server 8000
+npm install
+npm run dev      # local development at http://localhost:3000
+npm run build    # static export to ./out — deploy anywhere
 ```
 
 ## Design system — "Silk & Zari"
 
+Defined as Tailwind theme tokens in `app/globals.css`:
+
 | Token | Hex | Use |
 |---|---|---|
-| Ivory Silk | `#FAF6EF` | primary background |
-| Kumkum | `#6B1F2A` | display text, headers |
-| Antique Gold | `#B98A3E` | accents, borders, hover |
-| Turmeric Haldi | `#E0A526` | tags, active states |
-| Peepal Green | `#3E5C48` | B2B + contact sections |
-| Charcoal Ink | `#2B2624` | body text |
+| `ivory` | `#FAF6EF` | primary background |
+| `kumkum` | `#6B1F2A` | display text, headers |
+| `gold` | `#B98A3E` | accents, borders, hover |
+| `haldi` | `#E0A526` | tags, active states |
+| `peepal` | `#3E5C48` | B2B + contact sections |
+| `ink` | `#2B2624` | body text |
 
-Type: **Fraunces** (display serif) + **Work Sans** (body), via Google Fonts.
+Type: **Fraunces** (display serif) + **Work Sans** (body).
+
+## Structure
+
+- `app/page.tsx` — assembles the 13 sections in scroll order
+- `components/` — one component per section, plus shared primitives
+  (`ImageWithFallback`, `RevealInit` scroll animations, `motifs` SVGs)
+- `lib/data.ts` — all copy and image sources; edit content here without
+  touching markup
 
 ## Images
 
-All photography is demo/placeholder. Each `<img>` points at an Unsplash demo
-photo and falls back to an on-brand SVG placeholder in `assets/placeholders/`
-if the remote image is unavailable. To use real photography, replace the
-`src` attributes in `index.html` (the `alt` text describes what belongs in
-each frame).
+All photography is demo/placeholder. Each image points at an Unsplash demo
+photo and falls back to an on-brand SVG placeholder in
+`public/assets/placeholders/` if the remote image is unavailable
+(`components/ImageWithFallback.tsx`). To use real photography, replace the
+`src` values in `lib/data.ts` — each entry's `alt` text describes what
+belongs in the frame.
 
 ## Placeholder contact details to replace
 
-- Instagram: `@ushaswini.styles` (hero of `#contact`)
-- Phone / WhatsApp: `+91 90000 00000` (contact links and the floating
-  WhatsApp button `wa.me` URL)
-- Email: `hello@ushaswinistyles.com` (contact link and the enquiry form's
-  `mailto:` handler in `js/main.js`)
+All in `lib/data.ts` (`CONTACT`):
+
+- Instagram: `@ushaswini.styles`
+- Phone / WhatsApp: `+91 90000 00000`
+- Email: `hello@ushaswinistyles.com`
