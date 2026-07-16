@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-label="Kanchipuram Bride — placeholder">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4A141D"/>
+      <stop offset="1" stop-color="#8A5A24"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.38" r="0.75">
+      <stop offset="0" stop-color="#FFF6E3" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#FFF6E3" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#g)"/>
+  <rect width="1600" height="1000" fill="url(#glow)"/>
+  <rect x="18" y="18" width="1564" height="964" fill="none" stroke="#B98A3E" stroke-opacity="0.85" stroke-width="1.5"/>
+  <rect x="26" y="26" width="1548" height="948" fill="none" stroke="#B98A3E" stroke-opacity="0.45" stroke-width="1"/>
+  <g transform="translate(800.0 390.0) scale(2.2) translate(-53 -49)" opacity="0.9">
+    <path d="M50 16 C68 20 78 36 76 52 C74 70 60 82 46 78 C34 74 28 62 32 52 C36 42 48 40 54 48 C58 54 54 62 48 62" fill="none" stroke="#B98A3E" stroke-width="2.2" stroke-linecap="round"/>
+  </g>
+  
+</svg>

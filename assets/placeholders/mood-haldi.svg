@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="1000" viewBox="0 0 720 1000" role="img" aria-label="Haldi — placeholder">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#B97F16"/>
+      <stop offset="1" stop-color="#E0A526"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.38" r="0.75">
+      <stop offset="0" stop-color="#FFF6E3" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#FFF6E3" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="720" height="1000" fill="url(#g)"/>
+  <rect width="720" height="1000" fill="url(#glow)"/>
+  <rect x="18" y="18" width="684" height="964" fill="none" stroke="#B98A3E" stroke-opacity="0.85" stroke-width="1.5"/>
+  <rect x="26" y="26" width="668" height="948" fill="none" stroke="#B98A3E" stroke-opacity="0.45" stroke-width="1"/>
+  <g transform="translate(360.0 420.8) scale(1.584) translate(-53 -49)" opacity="0.9">
+    <path d="M50 16 C68 20 78 36 76 52 C74 70 60 82 46 78 C34 74 28 62 32 52 C36 42 48 40 54 48 C58 54 54 62 48 62" fill="none" stroke="#B98A3E" stroke-width="2.2" stroke-linecap="round"/>
+  </g>
+  <text x="360.0" y="554.72" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="27.36" letter-spacing="3.456" fill="#FAF6EF" opacity="0.95">HALDI</text>
+  <text x="360.0" y="592.16" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="16.56" letter-spacing="1.152" fill="#FAF6EF" opacity="0.7">moodboard placeholder</text>
+</svg>
