@@ -1,13 +1,13 @@
 import { CheckMotif } from "./motifs";
-import { CHECKLIST } from "@/lib/data";
+import { CHECKLIST, SECTIONS } from "@/lib/data";
 
 export default function Checklist() {
   return (
     <section id="checklist" className="kolam-bg py-[clamp(4.5rem,10vw,8rem)]">
       <div className="mx-auto max-w-[1180px] px-5 sm:px-10">
-        <p className="eyebrow reveal mb-4 text-center">Trust the Details</p>
+        <p className="eyebrow reveal mb-4 text-center">{SECTIONS.checklist.eyebrow}</p>
         <h2 className="reveal d1 text-center text-[clamp(2rem,4.6vw,3.2rem)]">
-          On your wedding day, I&rsquo;ve got&hellip;
+          {SECTIONS.checklist.heading}
         </h2>
 
         <ul className="reveal d2 mt-12 grid grid-cols-[repeat(auto-fill,minmax(min(100%,240px),1fr))] gap-4">

@@ -1,15 +1,15 @@
-import { PACKAGES } from "@/lib/data";
+import { PACKAGES, SECTIONS } from "@/lib/data";
 
 export default function Packages() {
   return (
     <section id="packages" className="py-[clamp(4.5rem,10vw,8rem)]">
       <div className="mx-auto max-w-[1180px] px-5 sm:px-10">
-        <p className="eyebrow reveal mb-4 text-center">Packages</p>
+        <p className="eyebrow reveal mb-4 text-center">{SECTIONS.packages.eyebrow}</p>
         <h2 className="reveal d1 text-center text-[clamp(2rem,4.6vw,3.2rem)]">
-          Choose your level of calm
+          {SECTIONS.packages.heading}
         </h2>
         <p className="reveal d2 mx-auto mt-4 max-w-xl text-center text-ink-soft">
-          Every package is tailored after our discovery call. Pricing on request.
+          {SECTIONS.packages.lede}
         </p>
 
         <div className="mt-12 grid items-stretch gap-6 sm:grid-cols-2 xl:grid-cols-4">

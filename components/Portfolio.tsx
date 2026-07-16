@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import ImageWithFallback from "./ImageWithFallback";
-import { WORKS, WORK_FILTERS, type Work, type WorkCategory } from "@/lib/data";
+import { SECTIONS, WORKS, WORK_FILTERS, type Work, type WorkCategory } from "@/lib/data";
 
 export default function Portfolio() {
   const [filter, setFilter] = useState<WorkCategory | "all">("all");
@@ -30,8 +30,10 @@ export default function Portfolio() {
   return (
     <section id="portfolio" className="py-[clamp(4.5rem,10vw,8rem)]">
       <div className="mx-auto max-w-[1180px] px-5 sm:px-10">
-        <p className="eyebrow reveal mb-4 text-center">Selected Work</p>
-        <h2 className="reveal d1 text-center text-[clamp(2rem,4.6vw,3.2rem)]">Portfolio</h2>
+        <p className="eyebrow reveal mb-4 text-center">{SECTIONS.portfolio.eyebrow}</p>
+        <h2 className="reveal d1 text-center text-[clamp(2rem,4.6vw,3.2rem)]">
+          {SECTIONS.portfolio.heading}
+        </h2>
 
         <div
           className="reveal d2 my-9 flex flex-wrap justify-center gap-2.5"

@@ -1,5 +1,6 @@
 import ImageWithFallback from "./ImageWithFallback";
-import { ABOUT_IMG, ROLES } from "@/lib/data";
+import Lines from "./Lines";
+import { ABOUT_COPY, ABOUT_IMG, ROLES, SECTIONS } from "@/lib/data";
 
 export default function About() {
   return (
@@ -12,21 +13,11 @@ export default function About() {
         </figure>
 
         <div>
-          <p className="eyebrow reveal mb-4">About</p>
+          <p className="eyebrow reveal mb-4">{SECTIONS.about.eyebrow}</p>
           <h2 className="reveal d1 text-[clamp(2rem,4.6vw,3.2rem)]">
-            A stylist&rsquo;s eye,
-            <br />
-            a bride&rsquo;s calm.
+            <Lines text={ABOUT_COPY.heading} />
           </h2>
-          <p className="reveal d2 mt-6 max-w-2xl">
-            I&rsquo;m Ushaswini — Lead Fashion Stylist at Mysore Saree Udyog, and the
-            person brides call when they want their wedding to look the way it
-            feels. My work lives where Kanchipuram silk meets a modern lens:
-            rooted in tradition, styled for today. I&rsquo;ve dressed brides, built
-            campaigns, and directed shoots long enough to know that the best
-            looks aren&rsquo;t assembled — they&rsquo;re composed. And on your wedding day,
-            I&rsquo;ll be the calmest person in the room.
-          </p>
+          <p className="reveal d2 mt-6 max-w-2xl">{ABOUT_COPY.bio}</p>
           <ul className="reveal d3 mt-7 flex flex-wrap gap-2.5" aria-label="Areas of practice">
             {ROLES.map((role) => (
               <li

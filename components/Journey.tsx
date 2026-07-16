@@ -1,16 +1,15 @@
-import { JOURNEY } from "@/lib/data";
+import { JOURNEY, SECTIONS } from "@/lib/data";
 
 export default function Journey() {
   return (
     <section id="journey" className="py-[clamp(4.5rem,10vw,8rem)]">
       <div className="mx-auto max-w-[1180px] px-5 sm:px-10">
-        <p className="eyebrow reveal mb-4 text-center">The Process</p>
+        <p className="eyebrow reveal mb-4 text-center">{SECTIONS.journey.eyebrow}</p>
         <h2 className="reveal d1 text-center text-[clamp(2rem,4.6vw,3.2rem)]">
-          The wedding journey
+          {SECTIONS.journey.heading}
         </h2>
         <p className="reveal d2 mx-auto mt-4 max-w-xl text-center text-ink-soft">
-          Eight quiet, deliberate steps between our first hello and your
-          reception exit.
+          {SECTIONS.journey.lede}
         </p>
       </div>
 

@@ -1,4 +1,5 @@
 import { JasmineMotif } from "./motifs";
+import { PHILOSOPHY_QUOTE } from "@/lib/data";
 
 export default function Philosophy() {
   return (
@@ -10,9 +11,7 @@ export default function Philosophy() {
         <JasmineMotif className="reveal h-[34px] w-[34px] text-gold" />
         <blockquote className="reveal d1">
           <p className="mx-auto max-w-4xl font-serif text-[clamp(1.5rem,3.4vw,2.4rem)] font-light italic leading-[1.45] text-ivory">
-            &ldquo;Every bride deserves more than a beautiful outfit. She
-            deserves a thoughtfully curated look — where fashion, jewellery,
-            makeup, hair, and personality come together seamlessly.&rdquo;
+            &ldquo;{PHILOSOPHY_QUOTE}&rdquo;
           </p>
         </blockquote>
         <JasmineMotif flipped className="reveal d2 h-[34px] w-[34px] text-gold" />

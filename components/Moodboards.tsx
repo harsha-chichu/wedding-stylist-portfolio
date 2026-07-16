@@ -2,7 +2,7 @@
 
 import { useRef } from "react";
 import ImageWithFallback from "./ImageWithFallback";
-import { MOODS, type Mood } from "@/lib/data";
+import { MOODS, SECTIONS, type Mood } from "@/lib/data";
 
 /** Per-theme tint gradients layered over each moodboard image. */
 const TINTS: Record<Mood["tint"], string> = {
@@ -57,12 +57,12 @@ export default function Moodboards() {
   return (
     <section id="moodboards" className="py-[clamp(4.5rem,10vw,8rem)]">
       <div className="mx-auto max-w-[1180px] px-5 sm:px-10">
-        <p className="eyebrow reveal mb-4 text-center">Signature</p>
+        <p className="eyebrow reveal mb-4 text-center">{SECTIONS.moodboards.eyebrow}</p>
         <h2 className="reveal d1 text-center text-[clamp(2rem,4.6vw,3.2rem)]">
-          Editorial moodboards
+          {SECTIONS.moodboards.heading}
         </h2>
         <p className="reveal d2 mx-auto mt-4 max-w-xl text-center text-ink-soft">
-          Eight directions a bridal story can take. Drag to wander through them.
+          {SECTIONS.moodboards.lede}
         </p>
       </div>
 

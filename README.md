@@ -37,8 +37,10 @@ Type: **Fraunces** (display serif) + **Work Sans** (body).
 - `app/page.tsx` — assembles the 13 sections in scroll order
 - `components/` — one component per section, plus shared primitives
   (`ImageWithFallback`, `RevealInit` scroll animations, `motifs` SVGs)
-- `lib/data.ts` — all copy and image sources; edit content here without
-  touching markup
+- `lib/data.ts` — **the single place to edit content**: bio, quotes,
+  headlines, section intros, services, packages, image sources, contact
+  details. Changing any site text means changing it here, never in a
+  component
 
 ## Images
 

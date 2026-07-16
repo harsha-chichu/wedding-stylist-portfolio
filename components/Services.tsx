@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import ServiceIcon from "./ServiceIcon";
-import { BRIDE_SERVICES, GROOM_SERVICES, type Service } from "@/lib/data";
+import { BRIDE_SERVICES, GROOM_SERVICES, SECTIONS, type Service } from "@/lib/data";
 
 function ServiceGrid({ services }: { services: Service[] }) {
   return (
@@ -27,9 +27,9 @@ export default function Services() {
   return (
     <section id="services" className="bg-ivory-deep py-[clamp(4.5rem,10vw,8rem)]">
       <div className="mx-auto max-w-[1180px] px-5 sm:px-10">
-        <p className="eyebrow reveal mb-4 text-center">Services</p>
+        <p className="eyebrow reveal mb-4 text-center">{SECTIONS.services.eyebrow}</p>
         <h2 className="reveal d1 text-center text-[clamp(2rem,4.6vw,3.2rem)]">
-          For the bride. For the groom.
+          {SECTIONS.services.heading}
         </h2>
 
         <div

@@ -2,6 +2,86 @@
 
 export type Img = { src: string; fallback: string; alt: string };
 
+/* ---------- Narrative copy ---------- */
+/* Multi-line headings are string arrays: each entry is one line on screen. */
+
+export const HERO_COPY = {
+  eyebrow: "Ushaswini Munupaly — Lead Fashion Stylist",
+  headline: ["The Art of", "Wedding Styling"],
+  subline:
+    "Timeless bridal experiences through fashion, styling & creative direction.",
+};
+
+export const ABOUT_COPY = {
+  heading: ["A stylist’s eye,", "a bride’s calm."],
+  bio: "I’m Ushaswini — Lead Fashion Stylist at Mysore Saree Udyog, and the person brides call when they want their wedding to look the way it feels. My work lives where Kanchipuram silk meets a modern lens: rooted in tradition, styled for today. I’ve dressed brides, built campaigns, and directed shoots long enough to know that the best looks aren’t assembled — they’re composed. And on your wedding day, I’ll be the calmest person in the room.",
+};
+
+export const PHILOSOPHY_QUOTE =
+  "Every bride deserves more than a beautiful outfit. She deserves a thoughtfully curated look — where fashion, jewellery, makeup, hair, and personality come together seamlessly.";
+
+export const WHY_STYLIST = {
+  without: {
+    title: "Without a stylist",
+    items: [
+      "Outfit decisions made in a fog of opinions — and second-guessed until the last week.",
+      "Jewellery that fights the saree instead of finishing it.",
+      "Expensive shopping mistakes that never leave the wardrobe again.",
+      "Last-minute panic when pleats, dupattas, and timelines collide.",
+    ],
+  },
+  with: {
+    title: "With a stylist",
+    items: [
+      "Every look coordinated — outfit, jewellery, makeup, and hair as one composition.",
+      "Confident shopping decisions, made once and made well.",
+      "Photographs with editorial polish, from the first ritual to the last dance.",
+      "A wedding you actually get to enjoy, because someone else is watching the details.",
+    ],
+  },
+};
+
+export const VENDOR_STATEMENT = {
+  quote: ["I act as the creative bridge", "between every artist at your wedding."],
+  centerLabel: ["Your", "Stylist"],
+};
+
+export const PARTNERS_COPY = {
+  heading: ["Add a stylist.", "Elevate everything."],
+  intro:
+    "Studios I partner with offer their clients something rare: a complete look, not just a service. Together we build higher-value packages, a premium client experience, and social content that markets itself.",
+};
+
+/** Eyebrow / heading / lede for each section intro, keyed by section id. */
+export const SECTIONS = {
+  about: { eyebrow: "About" },
+  why: { eyebrow: "The Difference", heading: "Why every bride needs a stylist" },
+  journey: {
+    eyebrow: "The Process",
+    heading: "The wedding journey",
+    lede: "Eight quiet, deliberate steps between our first hello and your reception exit.",
+  },
+  services: { eyebrow: "Services", heading: "For the bride. For the groom." },
+  moodboards: {
+    eyebrow: "Signature",
+    heading: "Editorial moodboards",
+    lede: "Eight directions a bridal story can take. Drag to wander through them.",
+  },
+  portfolio: { eyebrow: "Selected Work", heading: "Portfolio" },
+  vendors: { eyebrow: "Collaboration" },
+  checklist: {
+    eyebrow: "Trust the Details",
+    heading: "On your wedding day, I’ve got…",
+  },
+  packages: {
+    eyebrow: "Packages",
+    heading: "Choose your level of calm",
+    lede: "Every package is tailored after our discovery call. Pricing on request.",
+  },
+  partners: { eyebrow: "For Makeup Studios & Partners" },
+  contact: { heading: ["Let’s create beautiful", "weddings together."] },
+};
+
 export const HERO_IMG: Img = {
   src: "https://images.unsplash.com/photo-1583939003579-730e3918a45a?q=80&w=2000&auto=format&fit=crop",
   fallback: "/assets/placeholders/hero.svg",

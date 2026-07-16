@@ -1,13 +1,13 @@
-import { VENDORS } from "@/lib/data";
+import Lines from "./Lines";
+import { SECTIONS, VENDORS, VENDOR_STATEMENT } from "@/lib/data";
 
 export default function Vendors() {
   return (
     <section id="vendors" className="bg-ivory-deep py-[clamp(4.5rem,10vw,8rem)]">
       <div className="mx-auto max-w-[1180px] px-5 sm:px-10">
-        <p className="eyebrow reveal mb-4 text-center">Collaboration</p>
+        <p className="eyebrow reveal mb-4 text-center">{SECTIONS.vendors.eyebrow}</p>
         <h2 className="reveal d1 mx-auto max-w-3xl text-center text-[clamp(2rem,4.6vw,3.2rem)] font-light italic">
-          &ldquo;I act as the creative bridge
-          <br className="max-sm:hidden" /> between every artist at your wedding.&rdquo;
+          &ldquo;<Lines text={VENDOR_STATEMENT.quote} />&rdquo;
         </h2>
 
         <div
@@ -16,9 +16,7 @@ export default function Vendors() {
         >
           <div className="order-first mb-6 grid h-32 w-32 basis-full place-items-center justify-self-center rounded-full bg-kumkum text-center font-serif text-lg italic leading-snug text-ivory shadow-[0_0_0_10px_var(--color-ivory-deep),0_0_0_11px_rgba(185,138,62,0.35)] max-md:mx-auto md:absolute md:left-1/2 md:top-1/2 md:mb-0 md:h-[138px] md:w-[138px] md:-translate-x-1/2 md:-translate-y-1/2">
             <span>
-              Your
-              <br />
-              Stylist
+              <Lines text={VENDOR_STATEMENT.centerLabel} />
             </span>
           </div>
           {VENDORS.map((vendor, i) => (

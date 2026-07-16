@@ -1,7 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { CONTACT } from "@/lib/data";
+import Lines from "./Lines";
+import { CONTACT, SECTIONS } from "@/lib/data";
 
 function InstagramIcon() {
   return (
@@ -73,9 +74,7 @@ export default function Contact() {
     >
       <div className="mx-auto max-w-[1180px] px-5 sm:px-10">
         <h2 className="reveal text-center text-[clamp(2rem,4.6vw,3.2rem)] !text-ivory">
-          Let&rsquo;s create beautiful
-          <br />
-          weddings together.
+          <Lines text={SECTIONS.contact.heading} />
         </h2>
 
         <div className="reveal d1 my-10 flex flex-wrap justify-center gap-x-[clamp(1.5rem,5vw,3.5rem)] gap-y-5">

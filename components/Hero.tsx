@@ -1,5 +1,6 @@
 import ImageWithFallback from "./ImageWithFallback";
-import { HERO_IMG } from "@/lib/data";
+import Lines from "./Lines";
+import { HERO_COPY, HERO_IMG } from "@/lib/data";
 
 export default function Hero() {
   return (
@@ -20,16 +21,12 @@ export default function Hero() {
       </div>
 
       <div className="relative z-10 max-w-4xl px-6 pb-20 pt-28">
-        <p className="eyebrow reveal !text-champagne">
-          Ushaswini Munupaly — Lead Fashion Stylist
-        </p>
+        <p className="eyebrow reveal !text-champagne">{HERO_COPY.eyebrow}</p>
         <h1 className="reveal d1 mt-4 text-[clamp(2.9rem,8vw,5.5rem)] font-light !text-ivory">
-          The Art of
-          <br />
-          Wedding Styling
+          <Lines text={HERO_COPY.headline} />
         </h1>
         <p className="reveal d2 mt-6 text-[clamp(1rem,2vw,1.2rem)] tracking-wide text-ivory/85">
-          Timeless bridal experiences through fashion, styling &amp; creative direction.
+          {HERO_COPY.subline}
         </p>
         <div className="reveal d3 mt-10 flex flex-wrap justify-center gap-4">
           <a
