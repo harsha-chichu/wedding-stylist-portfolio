@@ -61,6 +61,10 @@ export default function Services() {
         <div id="panel-groom" role="tabpanel" aria-labelledby="tab-groom" hidden={tab !== "groom"}>
           <ServiceGrid services={GROOM_SERVICES} />
         </div>
+
+        <p className="mx-auto mt-12 max-w-2xl text-center font-serif text-lg italic leading-relaxed text-ink-soft">
+          {SECTIONS.services.note}
+        </p>
       </div>
     </section>
   );

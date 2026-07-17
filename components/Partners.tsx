@@ -14,14 +14,17 @@ export default function Partners() {
         </div>
 
         <div>
-          <ul className="reveal d2 mb-9 grid gap-3.5">
+          <ul className="reveal d2 mb-9 grid gap-5">
             {PARTNER_BENEFITS.map((benefit) => (
-              <li key={benefit} className="relative pl-7 text-ivory/90">
+              <li key={benefit.title} className="relative pl-7">
                 <span
                   className="absolute left-0 top-[0.62em] h-px w-3.5 bg-gold"
                   aria-hidden="true"
                 />
-                {benefit}
+                <span className="block font-medium text-ivory">{benefit.title}</span>
+                <span className="block text-[0.92rem] leading-relaxed text-ivory/70">
+                  {benefit.text}
+                </span>
               </li>
             ))}
           </ul>

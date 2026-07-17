@@ -7,18 +7,18 @@ export type Img = { src: string; fallback: string; alt: string };
 
 export const HERO_COPY = {
   eyebrow: "Ushaswini Munupaly — Lead Fashion Stylist",
-  headline: ["The Art of", "Wedding Styling"],
+  headline: ["The Art of", "Bridal Styling"],
   subline:
     "Timeless bridal experiences through fashion, styling & creative direction.",
 };
 
 export const ABOUT_COPY = {
   heading: ["A stylist’s eye,", "a bride’s calm."],
-  bio: "I’m Ushaswini — Lead Fashion Stylist at Mysore Saree Udyog, and the person brides call when they want their wedding to look the way it feels. My work lives where Kanchipuram silk meets a modern lens: rooted in tradition, styled for today. I’ve dressed brides, built campaigns, and directed shoots long enough to know that the best looks aren’t assembled — they’re composed. And on your wedding day, I’ll be the calmest person in the room.",
+  bio: "Fashion is where artistry meets intention and where style becomes a timeless narrative. Specializing in editorial, campaign, product, catalogue, and jewelry styling, I blend creative direction with refined aesthetics to craft timeless imagery that is both emotionally resonant and commercially impactful. Rooted in craftsmanship, precision, and an appreciation for elegance, my work transforms concepts into thoughtfully curated visual narratives that celebrate individuality, evoke emotion, inspire confidence, and leave a lasting impression.",
 };
 
 export const PHILOSOPHY_QUOTE =
-  "Every bride deserves more than a beautiful outfit. She deserves a thoughtfully curated look — where fashion, jewellery, makeup, hair, and personality come together seamlessly.";
+  "Every bride deserves a look that is as unforgettable as the moment itself. Through thoughtful styling, every detail — from fashion and jewellery to hair, makeup, and personal expression — is curated to create a seamless and timeless bridal identity.";
 
 export const WHY_STYLIST = {
   without: {
@@ -49,19 +49,27 @@ export const VENDOR_STATEMENT = {
 export const PARTNERS_COPY = {
   heading: ["Add a stylist.", "Elevate everything."],
   intro:
-    "Studios I partner with offer their clients something rare: a complete look, not just a service. Together we build higher-value packages, a premium client experience, and social content that markets itself.",
+    "Integrating bridal styling into your existing services creates a more elevated client experience while strengthening your studio's market position. By offering a complete styling journey — from fashion and jewellery to beauty coordination — you not only enhance the client's wedding experience but also unlock new opportunities for growth, collaboration, and brand value.",
 };
 
 /** Eyebrow / heading / lede for each section intro, keyed by section id. */
 export const SECTIONS = {
   about: { eyebrow: "About" },
-  why: { eyebrow: "The Difference", heading: "Why every bride needs a stylist" },
+  why: {
+    eyebrow: "The Difference",
+    heading: "The Bridal Styling Experience",
+    lede: "A wedding is one of life's most meaningful celebrations, and every detail deserves thoughtful attention. A bridal stylist brings clarity, cohesion, and confidence to the entire journey — ensuring every choice feels intentional and beautifully aligned.",
+  },
   journey: {
     eyebrow: "The Process",
     heading: "The wedding journey",
-    lede: "Eight quiet, deliberate steps between our first hello and your reception exit.",
+    lede: "Twelve quiet, deliberate steps between our first hello and your reception exit.",
   },
-  services: { eyebrow: "Services", heading: "For the bride. For the groom." },
+  services: {
+    eyebrow: "Services",
+    heading: "For the bride. For the groom.",
+    note: "For couples who want a beautifully cohesive wedding aesthetic, a dedicated styling experience ensures both partners complement one another while maintaining their individuality.",
+  },
   moodboards: {
     eyebrow: "Signature",
     heading: "Editorial moodboards",
@@ -104,36 +112,84 @@ export const ROLES = [
 ];
 
 export const JOURNEY = [
-  { title: "Discovery Call", text: "We talk about you — your story, your venues, your taste." },
-  { title: "Moodboard", text: "A visual direction for every event, curated to you." },
-  { title: "Shopping", text: "Guided sourcing — sarees, outfits, and fabrics, without the overwhelm." },
-  { title: "Fittings", text: "Blouse, drape, and silhouette perfected before it matters." },
-  { title: "Trial Styling", text: "Full look rehearsal — jewellery, hair, and makeup in concert." },
-  { title: "Vendor Coordination", text: "One brief shared with every artist on your day." },
-  { title: "Wedding Day Styling", text: "On-site, on-time, watching every pleat and pin." },
-  { title: "Reception Styling", text: "A second look, a fresh mood — styled to close the celebration." },
+  {
+    title: "Discovery Consultation",
+    text: "Understanding your wedding vision, celebrations, lifestyle, preferences, and styling expectations.",
+  },
+  {
+    title: "Personal Style & Aesthetic Discovery",
+    text: "Exploring your personality, signature style, cultural influences, inspirations, and the overall aesthetic that reflects you.",
+  },
+  {
+    title: "Colour Analysis & Silhouette Consultation",
+    text: "Identifying the colours, silhouettes, fabrics, and design details that best complement your complexion, body proportions, and natural features.",
+  },
+  {
+    title: "Bespoke Styling Concept",
+    text: "Creating a personalized moodboard and visual direction for every celebration, including fashion, jewellery, beauty, hairstyles, and styling references.",
+  },
+  {
+    title: "Curated Shopping Experience",
+    text: "Guided shopping with carefully selected designers and brands to build a cohesive wardrobe while making thoughtful, value-driven purchases.",
+  },
+  {
+    title: "Jewellery & Accessory Curation",
+    text: "Selecting jewellery, footwear, bags, and accessories that elevate every bridal ensemble with balance and elegance.",
+  },
+  {
+    title: "Beauty Direction",
+    text: "Curating makeup and hairstyling concepts that seamlessly complement your outfits, features, and overall bridal aesthetic.",
+  },
+  {
+    title: "Fittings & Refinement",
+    text: "Perfecting every garment through fittings, alterations, and styling refinements to ensure impeccable fit and comfort.",
+  },
+  {
+    title: "Editorial Styling Preview",
+    text: "A complete styling rehearsal where every element is brought together to visualize the final bridal look before the celebrations.",
+  },
+  {
+    title: "Creative Vendor Collaboration",
+    text: "Coordinating with designers, jewellers, makeup artists, hairstylists, photographers, and other creative partners to maintain a unified styling vision.",
+  },
+  {
+    title: "Wedding Day Styling",
+    text: "Providing on-site styling, draping, accessorizing, wardrobe management, and final finishing touches for a seamless wedding day experience.",
+  },
+  {
+    title: "Celebration Styling",
+    text: "Styling for receptions and post-wedding events, ensuring every look feels distinct while remaining beautifully connected to your overall bridal story.",
+  },
 ];
 
 export type Service = { icon: string; title: string; text: string };
 
 export const BRIDE_SERVICES: Service[] = [
-  { icon: "outfit", title: "Outfit Planning", text: "Every event mapped to a look — colour, fabric, and mood in sequence." },
-  { icon: "necklace", title: "Jewellery Styling", text: "Temple gold, polki, or pearls — matched to neckline, drape, and light." },
-  { icon: "brush", title: "Makeup Coordination", text: "A shared palette and brief so makeup completes the look, never competes." },
+  { icon: "consult", title: "Personal Style Consultation", text: "A one-on-one conversation to understand your taste, story, and vision." },
+  { icon: "wardrobe", title: "Wardrobe Planning", text: "Every event mapped to a look — colour, fabric, and mood in sequence." },
+  { icon: "outfit", title: "Outfit Curation", text: "Outfits sourced and composed for each celebration, never assembled last-minute." },
+  { icon: "palette", title: "Colour Analysis", text: "The shades that flatter your complexion, chosen before the shopping begins." },
+  { icon: "necklace", title: "Jewellery Curation", text: "Temple gold, polki, or pearls — matched to neckline, drape, and light." },
+  { icon: "brush", title: "Makeup Direction", text: "A shared palette and brief so makeup completes the look, never competes." },
   { icon: "hair", title: "Hair Styling Direction", text: "Braids, buns, and flowers directed to suit face, veil, and ritual." },
-  { icon: "flower", title: "Accessories & Floral Styling", text: "Jasmine, kanjivaram clutches, kamarbandhs — the finishing grammar." },
-  { icon: "blouse", title: "Blouse Styling", text: "Necklines, sleeves, and embroidery designed around your jewellery." },
-  { icon: "camera", title: "Photoshoot Styling", text: "Pre-wedding and portrait sessions styled like the editorials they'll become." },
+  { icon: "fragrance", title: "Accessories Styling", text: "Clutches, footwear, and finishing pieces that complete every ensemble." },
+  { icon: "flower", title: "Floral Styling", text: "Jasmine, garlands, and fresh flowers styled as part of the look itself." },
+  { icon: "blouse", title: "Blouse Design & Styling", text: "Necklines, sleeves, and embroidery designed around your jewellery." },
+  { icon: "camera", title: "Editorial Photoshoot Styling", text: "Pre-wedding and portrait sessions styled like the editorials they'll become." },
 ];
 
 export const GROOM_SERVICES: Service[] = [
+  { icon: "consult", title: "Personal Style Consultation", text: "A one-on-one conversation to define a style that feels like you, elevated." },
   { icon: "wardrobe", title: "Wardrobe Planning", text: "Every event, one coherent story — from haldi kurta to reception suit." },
-  { icon: "sherwani", title: "Sherwani Styling", text: "Cut, drape, and safa styled with the bride's palette in mind." },
-  { icon: "suit", title: "Suit Styling", text: "Tailoring guidance and finishing for cocktail and reception evenings." },
+  { icon: "sherwani", title: "Sherwani & Suit Styling", text: "Cut, drape, and tailoring styled with the bride's palette in mind." },
   { icon: "palette", title: "Colour Coordination", text: "Couple looks that photograph as a pair, never a coincidence." },
-  { icon: "fragrance", title: "Accessories & Fragrance", text: "Brooches, mojaris, pocket squares — and a scent that suits the hour." },
-  { icon: "grooming", title: "Hair & Grooming", text: "A grooming timeline that peaks on the right day, not the week after." },
-  { icon: "camera", title: "Photoshoot Styling", text: "Couple shoots and portraits, styled and directed frame by frame." },
+  { icon: "fragrance", title: "Accessories Styling", text: "Brooches, safas, pocket squares — the details that finish the frame." },
+  { icon: "grooming", title: "Hair & Grooming Direction", text: "A grooming timeline that peaks on the right day, not the week after." },
+  { icon: "footwear", title: "Footwear & Fragrance Curation", text: "Mojaris to oxfords, and a scent chosen to suit the hour." },
+  { icon: "steam", title: "Wedding Day Styling", text: "On-site dressing, draping, and finishing touches through every event." },
+  { icon: "camera", title: "Editorial Photoshoot Styling", text: "Couple shoots and portraits, styled and directed frame by frame." },
+  { icon: "event", title: "Reception & Event Styling", text: "A distinct look for every evening, connected by one aesthetic thread." },
+  { icon: "couple", title: "Couple Style Coordination", text: "Both partners in harmony — complementary, never matching for its own sake." },
 ];
 
 export type Mood = {
@@ -358,59 +414,47 @@ export const CHECKLIST = [
   "Timeline Management",
 ];
 
-export type Package = { name: string; signature?: boolean; items: string[] };
+export type Package = { name: string; tagline: string; signature?: boolean };
 
 export const PACKAGES: Package[] = [
+  { name: "Bridal Styling", tagline: "A personalized bridal styling journey." },
+  { name: "Groom Styling", tagline: "Refined styling for every celebration." },
+  { name: "Couple Styling", tagline: "A cohesive aesthetic for the bride & groom." },
+  { name: "Wedding Weekend Styling", tagline: "Curated looks across every wedding event." },
   {
-    name: "Bridal Styling",
-    items: [
-      "Discovery call & personal moodboard",
-      "Outfit & jewellery planning",
-      "One guided shopping session",
-      "Trial styling session",
-      "Wedding day styling on-site",
-    ],
-  },
-  {
-    name: "Couple Styling",
-    items: [
-      "Everything in Bridal Styling",
-      "Groom wardrobe planning",
-      "Couple colour coordination",
-      "Photoshoot styling direction",
-      "Two on-site styling events",
-    ],
-  },
-  {
-    name: "Wedding Weekend Styling",
-    items: [
-      "Looks for every event — haldi to reception",
-      "Full shopping & fittings support",
-      "Vendor briefs for each function",
-      "On-site styling across the weekend",
-      "Family styling guidance",
-    ],
-  },
-  {
-    name: "Luxury Concierge",
+    name: "Luxury Styling Concierge",
+    tagline: "End-to-end styling and coordination.",
     signature: true,
-    items: [
-      "End-to-end creative direction",
-      "Designer & boutique sourcing across cities",
-      "Full vendor coordination",
-      "Dedicated styling team on all event days",
-      "Editorial photoshoot production",
-    ],
   },
 ];
 
-export const PARTNER_BENEFITS = [
-  "Higher-value bridal packages",
-  "A premium, end-to-end client experience",
-  "Stronger, more shareable social content",
-  "Natural cross-selling between services",
-  "A wider vendor collaboration network",
-  "Elevated brand positioning",
+export type PartnerBenefit = { title: string; text: string };
+
+export const PARTNER_BENEFITS: PartnerBenefit[] = [
+  {
+    title: "Higher-Value Packages",
+    text: "Expand your service offerings with premium styling experiences that increase package value.",
+  },
+  {
+    title: "Luxury Client Experience",
+    text: "Deliver a seamless, personalized journey that leaves a lasting impression.",
+  },
+  {
+    title: "Editorial-Quality Content",
+    text: "Create visually compelling campaigns and wedding imagery that elevate your social media presence.",
+  },
+  {
+    title: "Cross-Selling Opportunities",
+    text: "Introduce styling, jewellery, wardrobe planning, and concierge services within existing packages.",
+  },
+  {
+    title: "Strategic Vendor Collaborations",
+    text: "Build stronger partnerships with designers, jewellers, photographers, and wedding professionals.",
+  },
+  {
+    title: "Elevated Brand Positioning",
+    text: "Establish your studio as a complete luxury bridal destination, offering more than just makeup.",
+  },
 ];
 
 export const CONTACT = {

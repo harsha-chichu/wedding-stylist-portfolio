@@ -12,11 +12,11 @@ export default function Packages() {
           {SECTIONS.packages.lede}
         </p>
 
-        <div className="mt-12 grid items-stretch gap-6 sm:grid-cols-2 xl:grid-cols-4">
+        <div className="mt-12 grid items-stretch gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
           {PACKAGES.map((pkg, i) => (
             <article
               key={pkg.name}
-              className={`reveal d${Math.min(i, 3)} relative flex flex-col px-8 py-10 ${
+              className={`reveal d${Math.min(i, 3)} relative flex flex-col px-7 py-10 ${
                 pkg.signature
                   ? "border border-gold bg-gradient-to-br from-kumkum-deep to-kumkum shadow-[inset_0_0_0_1px_rgba(185,138,62,0.25),0_24px_48px_-28px_rgba(74,20,29,0.55)]"
                   : "border border-gold/35 bg-ivory"
@@ -27,24 +27,16 @@ export default function Packages() {
                   Signature
                 </span>
               )}
-              <h3 className={`mb-5 text-[1.35rem] ${pkg.signature ? "!text-ivory" : ""}`}>
+              <h3 className={`mb-4 text-[1.3rem] ${pkg.signature ? "!text-ivory" : ""}`}>
                 {pkg.name}
               </h3>
-              <ul className="mb-7 grid flex-1 gap-3">
-                {pkg.items.map((item) => (
-                  <li
-                    key={item}
-                    className={`relative pl-5 text-[0.92rem] leading-normal ${
-                      pkg.signature ? "text-ivory/80" : "text-ink-soft"
-                    }`}
-                  >
-                    <span className="absolute left-0 text-gold" aria-hidden="true">
-                      —
-                    </span>
-                    {item}
-                  </li>
-                ))}
-              </ul>
+              <p
+                className={`mb-7 flex-1 text-[0.95rem] leading-relaxed ${
+                  pkg.signature ? "text-ivory/80" : "text-ink-soft"
+                }`}
+              >
+                {pkg.tagline}
+              </p>
               <p
                 className={`mb-5 font-serif italic ${
                   pkg.signature ? "text-haldi" : "text-gold"
