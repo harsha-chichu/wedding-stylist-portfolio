@@ -416,7 +416,7 @@ export const PARTNER_BENEFITS = [
 export const CONTACT = {
   instagram: "ushaswini.styles",
   phone: "+91 77806 81331",
-  phoneHref: "+919000000000",
+  phoneHref: "+917780681331",
   email: "hello@ushaswinistyles.com",
   whatsappText:
     "Hi Ushaswini, I'd love to talk about styling for my wedding.",
