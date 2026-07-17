@@ -72,7 +72,7 @@ export const SECTIONS = {
   },
   moodboards: {
     eyebrow: "Signature",
-    heading: "Editorial moodboards",
+    heading: "Visual Lookbook",
     lede: "Eight directions a bridal story can take. Drag to wander through them.",
   },
   portfolio: { eyebrow: "Selected Work", heading: "Portfolio" },

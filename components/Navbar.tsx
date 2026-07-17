@@ -7,7 +7,7 @@ const LINKS = [
   { href: "#philosophy", label: "Philosophy" },
   { href: "#journey", label: "Journey" },
   { href: "#services", label: "Services" },
-  { href: "#moodboards", label: "Moodboards" },
+  { href: "#moodboards", label: "Lookbook" },
   { href: "#portfolio", label: "Portfolio" },
   { href: "#packages", label: "Packages" },
 ];
