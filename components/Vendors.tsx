@@ -14,10 +14,15 @@ export default function Vendors() {
           className="reveal d2 mt-14 flex flex-wrap justify-center gap-3 md:relative md:mx-auto md:block md:h-[560px] md:max-w-[720px]"
           aria-label="Vendors Ushaswini coordinates with"
         >
-          <div className="order-first mb-6 grid h-32 w-32 basis-full place-items-center justify-self-center rounded-full bg-kumkum text-center font-serif text-lg italic leading-snug text-ivory shadow-[0_0_0_10px_var(--color-ivory-deep),0_0_0_11px_rgba(185,138,62,0.35)] max-md:mx-auto md:absolute md:left-1/2 md:top-1/2 md:mb-0 md:h-[138px] md:w-[138px] md:-translate-x-1/2 md:-translate-y-1/2">
-            <span>
-              <Lines text={VENDOR_STATEMENT.centerLabel} />
-            </span>
+          {/* Wrapper takes the full flex row on mobile so the circle sits alone
+              and centered without being stretched; display:contents removes it
+              on desktop so the circle positions absolutely in the orbit. */}
+          <div className="order-first max-md:mb-6 max-md:flex max-md:basis-full max-md:justify-center md:contents">
+            <div className="grid h-32 w-32 flex-none place-items-center rounded-full bg-kumkum text-center font-serif text-lg italic leading-snug text-ivory shadow-[0_0_0_10px_var(--color-ivory-deep),0_0_0_11px_rgba(185,138,62,0.35)] md:absolute md:left-1/2 md:top-1/2 md:h-[138px] md:w-[138px] md:-translate-x-1/2 md:-translate-y-1/2">
+              <span>
+                <Lines text={VENDOR_STATEMENT.centerLabel} />
+              </span>
+            </div>
           </div>
           {VENDORS.map((vendor, i) => (
             <span
