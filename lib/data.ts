@@ -149,9 +149,9 @@ export const MOODS: Mood[] = [
     title: "South Indian Temple Bride",
     caption: "Kumkum maroon · temple gold · jasmine",
     img: {
-      src: "https://images.unsplash.com/photo-1609357605129-26f69add5d6e?q=80&w=800&auto=format&fit=crop",
+      src: "https://images.unsplash.com/photo-uhM6J7rvcCs?q=80&w=800&auto=format&fit=crop",
       fallback: "/assets/placeholders/mood-temple.svg",
-      alt: "South Indian temple bride moodboard — deep maroon Kanchipuram silk and temple gold",
+      alt: "South Indian temple bride moodboard — deep red saree with traditional gold jewellery",
     },
   },
   {
@@ -159,9 +159,9 @@ export const MOODS: Mood[] = [
     title: "Royal Kanchipuram",
     caption: "Regal zari · heirloom polki · grandeur",
     img: {
-      src: "https://images.unsplash.com/photo-1631549916768-4119b2e5f926?q=80&w=800&auto=format&fit=crop",
+      src: "https://images.unsplash.com/photo-wcgCFUi_Zws?q=80&w=800&auto=format&fit=crop",
       fallback: "/assets/placeholders/mood-kanchipuram.svg",
-      alt: "Royal Kanchipuram moodboard — regal silk saree with heavy zari borders",
+      alt: "Royal Kanchipuram moodboard — regal silk saree with heavy gold zari borders",
     },
   },
   {
@@ -169,9 +169,9 @@ export const MOODS: Mood[] = [
     title: "Minimal Bride",
     caption: "Ivory · pearls · quiet luxury",
     img: {
-      src: "https://images.unsplash.com/photo-1594736797933-d0501ba2fe65?q=80&w=800&auto=format&fit=crop",
+      src: "https://images.unsplash.com/photo-gYCdjq-2830?q=80&w=800&auto=format&fit=crop",
       fallback: "/assets/placeholders/mood-minimal.svg",
-      alt: "Minimal bride moodboard — soft ivory tones and restrained jewellery",
+      alt: "Minimal bride moodboard — soft tones and restrained jewellery",
     },
   },
   {
@@ -179,9 +179,9 @@ export const MOODS: Mood[] = [
     title: "Modern Bride",
     caption: "Clean lines · statement drape · edge",
     img: {
-      src: "https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=800&auto=format&fit=crop",
+      src: "https://images.unsplash.com/photo-03ob5sImu3s?q=80&w=800&auto=format&fit=crop",
       fallback: "/assets/placeholders/mood-modern.svg",
-      alt: "Modern bride moodboard — contemporary silhouettes with traditional fabric",
+      alt: "Modern bride moodboard — contemporary saree styling with an editorial, candid feel",
     },
   },
   {
@@ -189,9 +189,9 @@ export const MOODS: Mood[] = [
     title: "Cocktail",
     caption: "Evening shimmer · sculpted silhouettes",
     img: {
-      src: "https://images.unsplash.com/photo-1606800052052-a08af7148866?q=80&w=800&auto=format&fit=crop",
+      src: "https://images.unsplash.com/photo-mhkKsgHQbOw?q=80&w=800&auto=format&fit=crop",
       fallback: "/assets/placeholders/mood-cocktail.svg",
-      alt: "Cocktail evening moodboard — shimmer, silhouette, and evening glamour",
+      alt: "Cocktail evening moodboard — graceful saree styling for an evening celebration",
     },
   },
   {
@@ -199,9 +199,9 @@ export const MOODS: Mood[] = [
     title: "Haldi",
     caption: "Turmeric · marigold · morning sun",
     img: {
-      src: "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?q=80&w=800&auto=format&fit=crop",
+      src: "https://images.unsplash.com/photo-v5sG5-zYthE?q=80&w=800&auto=format&fit=crop",
       fallback: "/assets/placeholders/mood-haldi.svg",
-      alt: "Haldi ceremony moodboard — turmeric yellows, marigolds, and morning light",
+      alt: "Haldi ceremony moodboard — couple showered with marigold flower petals",
     },
   },
   {
@@ -209,9 +209,9 @@ export const MOODS: Mood[] = [
     title: "Mehendi",
     caption: "Henna green · florals · ease",
     img: {
-      src: "https://images.unsplash.com/photo-1583391733956-6c78276477e2?q=80&w=800&auto=format&fit=crop",
+      src: "https://images.unsplash.com/photo-cAOL2touWXs?q=80&w=800&auto=format&fit=crop",
       fallback: "/assets/placeholders/mood-mehendi.svg",
-      alt: "Mehendi moodboard — henna greens, florals, and afternoon celebration",
+      alt: "Mehendi moodboard — bride in green surrounded by henna, florals, and afternoon ease",
     },
   },
   {
@@ -219,9 +219,9 @@ export const MOODS: Mood[] = [
     title: "Reception",
     caption: "Champagne · candlelight · last dance",
     img: {
-      src: "https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=800&auto=format&fit=crop",
+      src: "https://images.unsplash.com/photo-BHlJI-Rg0MM?q=80&w=800&auto=format&fit=crop",
       fallback: "/assets/placeholders/mood-reception.svg",
-      alt: "Reception moodboard — champagne tones and evening elegance",
+      alt: "Reception moodboard — couple in traditional wedding attire, evening elegance",
     },
   },
 ];
@@ -245,90 +245,90 @@ export const WORKS: Work[] = [
     cat: "campaign",
     caption: "Festive Campaign · Styling & Direction",
     img: {
-      src: "https://images.unsplash.com/photo-1610173826608-bd1f53a52db1?q=80&w=800&auto=format&fit=crop",
+      src: "https://images.unsplash.com/photo-tQ14OF1UQn0?q=80&w=800&auto=format&fit=crop",
       fallback: "/assets/placeholders/work-campaign-1.svg",
-      alt: "Festive campaign styling — model in silk saree against a warm set",
+      alt: "Festive campaign styling — portrait in a red and gold silk saree",
     },
   },
   {
     cat: "editorial",
     caption: "Bridal Editorial · Magazine Feature",
     img: {
-      src: "https://images.unsplash.com/photo-1583089892943-e02e5b017b6a?q=80&w=800&auto=format&fit=crop",
+      src: "https://images.unsplash.com/photo-c5szA-zveJE?q=80&w=800&auto=format&fit=crop",
       fallback: "/assets/placeholders/work-editorial-1.svg",
-      alt: "Bridal editorial styling — close portrait with heirloom jewellery",
+      alt: "Bridal editorial styling — bride adorned in traditional attire",
     },
   },
   {
     cat: "msu",
     caption: "Mysore Saree Udyog · Silk Collection",
     img: {
-      src: "https://images.unsplash.com/photo-1610030469983-98e550d6193c?q=80&w=800&auto=format&fit=crop",
+      src: "https://images.unsplash.com/photo-HGAcJM3p3yk?q=80&w=800&auto=format&fit=crop",
       fallback: "/assets/placeholders/work-msu-1.svg",
-      alt: "Mysore Saree Udyog campaign — Kanchipuram silk collection styling",
+      alt: "Mysore Saree Udyog campaign — silk saree collection styling",
     },
   },
   {
     cat: "jewellery",
     caption: "Temple Jewellery · Styling",
     img: {
-      src: "https://images.unsplash.com/photo-1601121141461-9d6647bca1ed?q=80&w=800&auto=format&fit=crop",
+      src: "https://images.unsplash.com/photo-9b9SCjrZkXY?q=80&w=800&auto=format&fit=crop",
       fallback: "/assets/placeholders/work-jewellery-1.svg",
-      alt: "Temple jewellery styling — layered gold necklaces on silk",
+      alt: "Temple jewellery styling — hands adorned with chunky gold rings and bangles",
     },
   },
   {
     cat: "catalog",
     caption: "Catalog · Drape Studies",
     img: {
-      src: "https://images.unsplash.com/photo-1600950207944-0d63e8edbc3f?q=80&w=800&auto=format&fit=crop",
+      src: "https://images.unsplash.com/photo-SsGD7Vjl4AY?q=80&w=800&auto=format&fit=crop",
       fallback: "/assets/placeholders/work-catalog-1.svg",
-      alt: "Product and catalog styling — saree flat-lays and drape studies",
+      alt: "Product and catalog styling — saree drape studies and styling comparison",
     },
   },
   {
     cat: "editorial",
     caption: "Golden Hour · Editorial",
     img: {
-      src: "https://images.unsplash.com/photo-1587271407850-8d438ca9fdf2?q=80&w=800&auto=format&fit=crop",
+      src: "https://images.unsplash.com/photo-mb-qgRDcz-s?q=80&w=800&auto=format&fit=crop",
       fallback: "/assets/placeholders/work-editorial-2.svg",
-      alt: "Editorial styling — bride in golden-hour light",
+      alt: "Editorial styling — portrait in a red and gold saree",
     },
   },
   {
     cat: "campaign",
     caption: "Couple Campaign · Creative Direction",
     img: {
-      src: "https://images.unsplash.com/photo-1529636798458-92182e662485?q=80&w=800&auto=format&fit=crop",
+      src: "https://images.unsplash.com/photo-RIOegGLaUbE?q=80&w=800&auto=format&fit=crop",
       fallback: "/assets/placeholders/work-campaign-2.svg",
-      alt: "Couple campaign styling — coordinated wedding looks outdoors",
+      alt: "Couple campaign styling — coordinated wedding looks in a garden setting",
     },
   },
   {
     cat: "jewellery",
     caption: "Fine Jewellery · Detail Styling",
     img: {
-      src: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?q=80&w=800&auto=format&fit=crop",
+      src: "https://images.unsplash.com/photo-vl46kNcTihA?q=80&w=800&auto=format&fit=crop",
       fallback: "/assets/placeholders/work-jewellery-2.svg",
-      alt: "Bridal jewellery detail — rings and fine gold work",
+      alt: "Bridal jewellery detail — bride and groom's hands at a traditional ceremony",
     },
   },
   {
     cat: "msu",
     caption: "Mysore Saree Udyog · Festive Edit",
     img: {
-      src: "https://images.unsplash.com/photo-1595854341625-f33ee10dbf94?q=80&w=800&auto=format&fit=crop",
+      src: "https://images.unsplash.com/photo-K-FsaRBbSx8?q=80&w=800&auto=format&fit=crop",
       fallback: "/assets/placeholders/work-msu-2.svg",
-      alt: "Mysore Saree Udyog lookbook — festive edit styling",
+      alt: "Mysore Saree Udyog lookbook — bride in traditional red wedding attire holding flowers",
     },
   },
   {
     cat: "bts",
     caption: "Behind the Scenes · On Set",
     img: {
-      src: "https://images.unsplash.com/photo-1522673607200-164d1b6ce486?q=80&w=800&auto=format&fit=crop",
+      src: "https://images.unsplash.com/photo-yTsQX3b6HmI?q=80&w=800&auto=format&fit=crop",
       fallback: "/assets/placeholders/work-bts-1.svg",
-      alt: "Behind the scenes — styling team preparing a bridal shoot",
+      alt: "Behind the scenes — styling team preparing for a fashion shoot",
     },
   },
 ];
