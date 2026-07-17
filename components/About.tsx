@@ -8,7 +8,7 @@ export default function About() {
       <div className="mx-auto grid max-w-[1180px] items-center gap-[clamp(2.5rem,6vw,5.5rem)] px-5 sm:px-10 md:grid-cols-[5fr_7fr]">
         <figure className="reveal mx-auto w-full max-w-[380px] md:max-w-none">
           <div className="arch-frame">
-            <ImageWithFallback img={ABOUT_IMG} width={800} height={1040} sizes="(min-width: 768px) 40vw, 90vw" />
+            <ImageWithFallback img={ABOUT_IMG} width={800} height={1040} loading="eager" sizes="(min-width: 768px) 40vw, 90vw" />
           </div>
         </figure>
 

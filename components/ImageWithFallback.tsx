@@ -10,6 +10,7 @@ type Props = {
   height: number;
   className?: string;
   priority?: boolean;
+  loading?: "eager" | "lazy";
   sizes?: string;
 };
 
@@ -23,6 +24,7 @@ export default function ImageWithFallback({
   height,
   className,
   priority,
+  loading,
   sizes,
 }: Props) {
   const [src, setSrc] = useState(img.src);
@@ -34,6 +36,7 @@ export default function ImageWithFallback({
       height={height}
       className={className}
       priority={priority}
+      loading={loading}
       sizes={sizes}
       onError={() => setSrc(img.fallback)}
     />

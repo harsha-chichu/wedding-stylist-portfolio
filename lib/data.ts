@@ -83,14 +83,14 @@ export const SECTIONS = {
 };
 
 export const HERO_IMG: Img = {
-  src: "https://images.unsplash.com/photo-1583939003579-730e3918a45a?q=80&w=2000&auto=format&fit=crop",
+  src: "/assets/placeholders/hero.jpg",
   fallback: "/assets/placeholders/hero.svg",
   alt: "South Indian bride in a Kanchipuram silk saree and temple jewellery, photographed in warm golden light",
 };
 
 export const ABOUT_IMG: Img = {
-  src: "https://images.unsplash.com/photo-1610030469983-98e550d6193c?q=80&w=900&auto=format&fit=crop",
-  fallback: "/assets/placeholders/about.svg",
+  src: "/assets/placeholders/about_image_usha.png",
+  fallback: "/assets/placeholders/about_image_usha.png",
   alt: "Portrait of Ushaswini Munupaly styling a bridal look",
 };
 
@@ -415,7 +415,7 @@ export const PARTNER_BENEFITS = [
 
 export const CONTACT = {
   instagram: "ushaswini.styles",
-  phone: "+91 90000 00000",
+  phone: "+91 77806 81331",
   phoneHref: "+919000000000",
   email: "hello@ushaswinistyles.com",
   whatsappText:
