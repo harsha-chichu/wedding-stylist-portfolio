@@ -97,7 +97,7 @@ export const HERO_IMG: Img = {
 };
 
 export const ABOUT_IMG: Img = {
-  src: "/assets/placeholders/about_image_usha.png",
+  src: "/assets/placeholders/about.PNG",
   fallback: "/assets/placeholders/about_image_usha.png",
   alt: "Portrait of Ushaswini Munupaly styling a bridal look",
 };
@@ -205,7 +205,7 @@ export const MOODS: Mood[] = [
     title: "South Indian Temple Bride",
     caption: "Kumkum maroon · temple gold · jasmine",
     img: {
-      src: "https://images.unsplash.com/photo-uhM6J7rvcCs?q=80&w=800&auto=format&fit=crop",
+      src: "/assets/placeholders/south_indian_bride.png",
       fallback: "/assets/placeholders/mood-temple.svg",
       alt: "South Indian temple bride moodboard — deep red saree with traditional gold jewellery",
     },
@@ -215,7 +215,7 @@ export const MOODS: Mood[] = [
     title: "Royal Kanchipuram",
     caption: "Regal zari · heirloom polki · grandeur",
     img: {
-      src: "https://images.unsplash.com/photo-wcgCFUi_Zws?q=80&w=800&auto=format&fit=crop",
+      src: "/assets/placeholders/royal_kanchipuram.png",
       fallback: "/assets/placeholders/mood-kanchipuram.svg",
       alt: "Royal Kanchipuram moodboard — regal silk saree with heavy gold zari borders",
     },
@@ -225,7 +225,7 @@ export const MOODS: Mood[] = [
     title: "Minimal Bride",
     caption: "Ivory · pearls · quiet luxury",
     img: {
-      src: "https://images.unsplash.com/photo-gYCdjq-2830?q=80&w=800&auto=format&fit=crop",
+      src: "/assets/placeholders/minimal_bride.png",
       fallback: "/assets/placeholders/mood-minimal.svg",
       alt: "Minimal bride moodboard — soft tones and restrained jewellery",
     },
@@ -235,7 +235,7 @@ export const MOODS: Mood[] = [
     title: "Modern Bride",
     caption: "Clean lines · statement drape · edge",
     img: {
-      src: "https://images.unsplash.com/photo-03ob5sImu3s?q=80&w=800&auto=format&fit=crop",
+      src: "/assets/placeholders/modern_bride.png",
       fallback: "/assets/placeholders/mood-modern.svg",
       alt: "Modern bride moodboard — contemporary saree styling with an editorial, candid feel",
     },
@@ -245,7 +245,7 @@ export const MOODS: Mood[] = [
     title: "Cocktail",
     caption: "Evening shimmer · sculpted silhouettes",
     img: {
-      src: "https://images.unsplash.com/photo-mhkKsgHQbOw?q=80&w=800&auto=format&fit=crop",
+      src: "/assets/placeholders/cocktail.png",
       fallback: "/assets/placeholders/mood-cocktail.svg",
       alt: "Cocktail evening moodboard — graceful saree styling for an evening celebration",
     },
@@ -255,7 +255,7 @@ export const MOODS: Mood[] = [
     title: "Haldi",
     caption: "Turmeric · marigold · morning sun",
     img: {
-      src: "https://images.unsplash.com/photo-v5sG5-zYthE?q=80&w=800&auto=format&fit=crop",
+      src: "/assets/placeholders/haldi.png",
       fallback: "/assets/placeholders/mood-haldi.svg",
       alt: "Haldi ceremony moodboard — couple showered with marigold flower petals",
     },
@@ -265,7 +265,7 @@ export const MOODS: Mood[] = [
     title: "Mehendi",
     caption: "Henna green · florals · ease",
     img: {
-      src: "https://images.unsplash.com/photo-cAOL2touWXs?q=80&w=800&auto=format&fit=crop",
+      src: "/assets/placeholders/mehandi.png",
       fallback: "/assets/placeholders/mood-mehendi.svg",
       alt: "Mehendi moodboard — bride in green surrounded by henna, florals, and afternoon ease",
     },
@@ -275,7 +275,7 @@ export const MOODS: Mood[] = [
     title: "Reception",
     caption: "Champagne · candlelight · last dance",
     img: {
-      src: "https://images.unsplash.com/photo-BHlJI-Rg0MM?q=80&w=800&auto=format&fit=crop",
+      src: "/assets/placeholders/reception.png",
       fallback: "/assets/placeholders/mood-reception.svg",
       alt: "Reception moodboard — couple in traditional wedding attire, evening elegance",
     },
@@ -301,7 +301,7 @@ export const WORKS: Work[] = [
     cat: "campaign",
     caption: "Festive Campaign · Styling & Direction",
     img: {
-      src: "https://images.unsplash.com/photo-tQ14OF1UQn0?q=80&w=800&auto=format&fit=crop",
+      src: "/assets/placeholders/campain.png",
       fallback: "/assets/placeholders/work-campaign-1.svg",
       alt: "Festive campaign styling — portrait in a red and gold silk saree",
     },
@@ -310,7 +310,7 @@ export const WORKS: Work[] = [
     cat: "editorial",
     caption: "Bridal Editorial · Magazine Feature",
     img: {
-      src: "https://images.unsplash.com/photo-c5szA-zveJE?q=80&w=800&auto=format&fit=crop",
+      src: "/assets/placeholders/editorial.png",
       fallback: "/assets/placeholders/work-editorial-1.svg",
       alt: "Bridal editorial styling — bride adorned in traditional attire",
     },
@@ -319,7 +319,7 @@ export const WORKS: Work[] = [
     cat: "msu",
     caption: "Mysore Saree Udyog · Silk Collection",
     img: {
-      src: "https://images.unsplash.com/photo-HGAcJM3p3yk?q=80&w=800&auto=format&fit=crop",
+      src: "/assets/placeholders/mysore_saree_udyog.png",
       fallback: "/assets/placeholders/work-msu-1.svg",
       alt: "Mysore Saree Udyog campaign — silk saree collection styling",
     },
@@ -328,25 +328,16 @@ export const WORKS: Work[] = [
     cat: "jewellery",
     caption: "Temple Jewellery · Styling",
     img: {
-      src: "https://images.unsplash.com/photo-9b9SCjrZkXY?q=80&w=800&auto=format&fit=crop",
+      src: "/assets/placeholders/jwelry_styling_2.png",
       fallback: "/assets/placeholders/work-jewellery-1.svg",
       alt: "Temple jewellery styling — hands adorned with chunky gold rings and bangles",
-    },
-  },
-  {
-    cat: "catalog",
-    caption: "Catalog · Drape Studies",
-    img: {
-      src: "https://images.unsplash.com/photo-SsGD7Vjl4AY?q=80&w=800&auto=format&fit=crop",
-      fallback: "/assets/placeholders/work-catalog-1.svg",
-      alt: "Product and catalog styling — saree drape studies and styling comparison",
     },
   },
   {
     cat: "editorial",
     caption: "Golden Hour · Editorial",
     img: {
-      src: "https://images.unsplash.com/photo-mb-qgRDcz-s?q=80&w=800&auto=format&fit=crop",
+      src: "/assets/placeholders/editorial_2.png",
       fallback: "/assets/placeholders/work-editorial-2.svg",
       alt: "Editorial styling — portrait in a red and gold saree",
     },
@@ -355,7 +346,7 @@ export const WORKS: Work[] = [
     cat: "campaign",
     caption: "Couple Campaign · Creative Direction",
     img: {
-      src: "https://images.unsplash.com/photo-RIOegGLaUbE?q=80&w=800&auto=format&fit=crop",
+      src: "https://images.unsplash.com/photo-1781077127473-343904bb5856?q=90&w=1600&auto=format&fit=crop",
       fallback: "/assets/placeholders/work-campaign-2.svg",
       alt: "Couple campaign styling — coordinated wedding looks in a garden setting",
     },
@@ -364,7 +355,7 @@ export const WORKS: Work[] = [
     cat: "jewellery",
     caption: "Fine Jewellery · Detail Styling",
     img: {
-      src: "https://images.unsplash.com/photo-vl46kNcTihA?q=80&w=800&auto=format&fit=crop",
+      src: "/assets/placeholders/jweley_styling.png",
       fallback: "/assets/placeholders/work-jewellery-2.svg",
       alt: "Bridal jewellery detail — bride and groom's hands at a traditional ceremony",
     },
@@ -373,18 +364,9 @@ export const WORKS: Work[] = [
     cat: "msu",
     caption: "Mysore Saree Udyog · Festive Edit",
     img: {
-      src: "https://images.unsplash.com/photo-K-FsaRBbSx8?q=80&w=800&auto=format&fit=crop",
+      src: "/assets/placeholders/mysore_saree_udyog_2.png",
       fallback: "/assets/placeholders/work-msu-2.svg",
       alt: "Mysore Saree Udyog lookbook — bride in traditional red wedding attire holding flowers",
-    },
-  },
-  {
-    cat: "bts",
-    caption: "Behind the Scenes · On Set",
-    img: {
-      src: "https://images.unsplash.com/photo-yTsQX3b6HmI?q=80&w=800&auto=format&fit=crop",
-      fallback: "/assets/placeholders/work-bts-1.svg",
-      alt: "Behind the scenes — styling team preparing for a fashion shoot",
     },
   },
 ];
@@ -458,7 +440,7 @@ export const PARTNER_BENEFITS: PartnerBenefit[] = [
 ];
 
 export const CONTACT = {
-  instagram: "ushaswini.styles",
+  instagram: "_ushaswini",
   phone: "+91 77806 81331",
   phoneHref: "+917780681331",
   email: "hello@ushaswinistyles.com",
