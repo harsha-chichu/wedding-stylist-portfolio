@@ -11,6 +11,15 @@ export default function Footer() {
       <p className="mt-5 text-[0.78rem] tracking-wider text-ivory/45">
         &copy; {new Date().getFullYear()} Ushaswini Munupaly · Bridal &amp; Wedding Stylist
       </p>
+      <p className="mt-2 text-[0.7rem] tracking-wider text-ivory/30">
+        Designed &amp; developed by{" "}
+        <a
+          href="mailto:harshachinnu129@gmail.com"
+          className="underline decoration-ivory/20 underline-offset-2 hover:text-ivory/50"
+        >
+          harshachinnu129@gmail.com
+        </a>
+      </p>
     </footer>
   );
 }
