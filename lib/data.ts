@@ -6,7 +6,7 @@ export type Img = { src: string; fallback: string; alt: string };
 /* Multi-line headings are string arrays: each entry is one line on screen. */
 
 export const HERO_COPY = {
-  eyebrow: "Ushaswini Munupally — Lead Fashion Stylist",
+  eyebrow: "Ushaswini Munupally - Fashion Stylist",
   headline: ["The Art of", "Bridal Styling"],
   subline:
     "Timeless bridal experiences through fashion, styling & creative direction.",
@@ -439,6 +439,42 @@ export const WORKS: Work[] = [
       src: "/assets/placeholders/mysore_saree_udyog.png",
       fallback: "/assets/placeholders/work-msu-1.svg",
       alt: "Mysore Saree Udyog campaign — silk saree collection styling",
+    },
+  },
+  {
+    cat: "msu",
+    caption: "",
+    img: {
+      src: "/assets/msu/1.png",
+      fallback: "/assets/placeholders/work-campaign-1.svg",
+      alt: "Festive campaign styling — portrait in a red and gold silk saree",
+    },
+  },
+  {
+    cat: "msu",
+    caption: "",
+    img: {
+      src: "/assets/msu/2.png",
+      fallback: "/assets/placeholders/work-campaign-1.svg",
+      alt: "Festive campaign styling — portrait in a red and gold silk saree",
+    },
+  },
+  {
+    cat: "msu",
+    caption: "",
+    img: {
+      src: "/assets/msu/3.png",
+      fallback: "/assets/placeholders/work-campaign-1.svg",
+      alt: "Festive campaign styling — portrait in a red and gold silk saree",
+    },
+  },
+  {
+    cat: "msu",
+    caption: "",
+    img: {
+      src: "/assets/msu/4.png",
+      fallback: "/assets/placeholders/work-campaign-1.svg",
+      alt: "Festive campaign styling — portrait in a red and gold silk saree",
     },
   },
   {

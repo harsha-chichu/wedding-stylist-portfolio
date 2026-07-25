@@ -1,6 +1,6 @@
 # Ushaswini Munupally — Bridal & Wedding Stylist Portfolio
 
-A single-page portfolio website for Ushaswini Munupally, Lead Fashion Stylist
+A single-page portfolio website for Ushaswini Munupally, Fashion Stylist
 specializing in Indian bridal styling. Luxury editorial magazine meets a South
 Indian wedding — modern in structure, traditional Indian in soul.
 
