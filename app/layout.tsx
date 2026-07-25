@@ -18,11 +18,11 @@ const workSans = Work_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Ushaswini Munupaly — Bridal & Wedding Stylist",
+  title: "Ushaswini Munupally — Bridal & Wedding Stylist",
   description:
-    "Ushaswini Munupaly, Lead Fashion Stylist. Timeless Indian bridal styling — fashion, jewellery, and creative direction for weddings that photograph like editorials.",
+    "Ushaswini Munupally, Lead Fashion Stylist. Timeless Indian bridal styling — fashion, jewellery, and creative direction for weddings that photograph like editorials.",
   openGraph: {
-    title: "Ushaswini Munupaly — Bridal & Wedding Stylist",
+    title: "Ushaswini Munupally — Bridal & Wedding Stylist",
     description:
       "Timeless bridal experiences through fashion, styling & creative direction.",
     type: "website",

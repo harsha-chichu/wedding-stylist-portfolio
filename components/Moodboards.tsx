@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import ImageWithFallback from "./ImageWithFallback";
 import { MOODS, SECTIONS, type Mood } from "@/lib/data";
 
@@ -19,6 +19,35 @@ const TINTS: Record<Mood["tint"], string> = {
 export default function Moodboards() {
   const scroller = useRef<HTMLDivElement>(null);
   const drag = useRef({ down: false, moved: false, startX: 0, startLeft: 0 });
+
+  // Long-press "peek": on touch, press-and-hold a card to zoom the photo and
+  // hide its tint + caption. Desktop hover is handled purely in CSS.
+  const [peek, setPeek] = useState<number | null>(null);
+  const lp = useRef<{ timer: ReturnType<typeof setTimeout> | null; x: number; y: number }>({
+    timer: null,
+    x: 0,
+    y: 0,
+  });
+
+  const clearPeek = () => {
+    if (lp.current.timer) clearTimeout(lp.current.timer);
+    lp.current.timer = null;
+    setPeek(null);
+  };
+
+  const onCardPointerDown = (i: number) => (e: React.PointerEvent) => {
+    if (e.pointerType === "mouse") return; // desktop uses CSS hover
+    lp.current.x = e.clientX;
+    lp.current.y = e.clientY;
+    lp.current.timer = setTimeout(() => setPeek(i), 400);
+  };
+
+  const onCardPointerMove = (e: React.PointerEvent) => {
+    if (!lp.current.timer && peek === null) return;
+    const moved =
+      Math.abs(e.clientX - lp.current.x) > 10 || Math.abs(e.clientY - lp.current.y) > 10;
+    if (moved) clearPeek(); // user is scrolling — cancel the peek
+  };
 
   const onPointerDown = (e: React.PointerEvent) => {
     if (e.pointerType !== "mouse") return; // touch scrolls natively
@@ -78,20 +107,33 @@ export default function Moodboards() {
         onPointerCancel={endDrag}
         onKeyDown={onKeyDown}
       >
-        {MOODS.map((mood) => (
+        {MOODS.map((mood, i) => (
           <article
             key={mood.title}
-            className="group relative aspect-[7.2/10] flex-none basis-[min(72vw,300px)] snap-center overflow-hidden rounded-sm"
+            className={`mood-card relative aspect-[7.2/10] flex-none basis-[min(72vw,300px)] snap-center overflow-hidden rounded-sm ${
+              peek === i ? "is-peeking" : ""
+            }`}
+            onPointerDown={onCardPointerDown(i)}
+            onPointerMove={onCardPointerMove}
+            onPointerUp={clearPeek}
+            onPointerCancel={clearPeek}
+            onPointerLeave={clearPeek}
+            onContextMenu={(e) => {
+              if (peek === i) e.preventDefault();
+            }}
           >
             <ImageWithFallback
               img={mood.img}
               width={720}
               height={1000}
               sizes="300px"
-              className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.045]"
+              className="mood-media h-full w-full object-cover"
             />
-            <div className={`pointer-events-none absolute inset-0 ${TINTS[mood.tint]}`} aria-hidden="true" />
-            <div className="absolute inset-x-4 bottom-4 z-10 border border-gold/35 bg-ivory/90 px-4 py-3.5">
+            <div
+              className={`mood-tint pointer-events-none absolute inset-0 ${TINTS[mood.tint]}`}
+              aria-hidden="true"
+            />
+            <div className="mood-caption absolute inset-x-4 bottom-4 z-10 border border-gold/35 bg-ivory/90 px-4 py-3.5">
               <h3 className="text-[1.05rem] leading-tight">{mood.title}</h3>
               <p className="mt-1 text-[0.68rem] font-medium uppercase tracking-[0.16em] text-gold">
                 {mood.caption}

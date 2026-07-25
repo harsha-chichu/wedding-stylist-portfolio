@@ -198,6 +198,9 @@ h3 {
 }
 @media (min-width: 768px) {
   .journey-step { padding: 2.2rem 1.6rem 0.5rem 0; margin-right: 1.4rem; }
+  /* Reserve room for the tallest title (~3 lines) so every description
+     paragraph starts on the same baseline across cards. */
+  .journey-step h3 { min-height: calc(1.15rem * 1.12 * 3); }
 }
 
 /* Portfolio hover: gold border draws itself + lift */
@@ -275,6 +278,25 @@ h3 {
 }
 .mood-scroller.is-dragging { cursor: grabbing; scroll-snap-type: none; }
 .mood-scroller.is-dragging > * { pointer-events: none; }
+
+/* Moodboard card peek — hover (desktop) or long-press (touch) zooms the
+   photo and fades the tint + caption so only the clean image shows. */
+.mood-media { transition: transform 700ms ease; -webkit-touch-callout: none; user-select: none; }
+.mood-tint, .mood-caption { transition: opacity 450ms ease; }
+
+@media (hover: hover) {
+  .mood-card:hover .mood-media { transform: scale(1.14); }
+  .mood-card:hover .mood-tint,
+  .mood-card:hover .mood-caption { opacity: 0; }
+}
+
+.mood-card.is-peeking .mood-media { transform: scale(1.14); }
+.mood-card.is-peeking .mood-tint,
+.mood-card.is-peeking .mood-caption { opacity: 0; }
+
+/* Journey timeline scroller — wheel-driven horizontal scroll, no visible scrollbar */
+.journey-scroller { scrollbar-width: none; }              /* Firefox */
+.journey-scroller::-webkit-scrollbar { display: none; }   /* WebKit */
 
 /* ---------- Reduced motion ---------- */
 @media (prefers-reduced-motion: reduce) {

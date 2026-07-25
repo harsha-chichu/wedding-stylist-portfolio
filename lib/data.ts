@@ -6,7 +6,7 @@ export type Img = { src: string; fallback: string; alt: string };
 /* Multi-line headings are string arrays: each entry is one line on screen. */
 
 export const HERO_COPY = {
-  eyebrow: "Ushaswini Munupaly — Lead Fashion Stylist",
+  eyebrow: "Ushaswini Munupally — Lead Fashion Stylist",
   headline: ["The Art of", "Bridal Styling"],
   subline:
     "Timeless bridal experiences through fashion, styling & creative direction.",
@@ -99,7 +99,7 @@ export const HERO_IMG: Img = {
 export const ABOUT_IMG: Img = {
   src: "/assets/placeholders/about.PNG",
   fallback: "/assets/placeholders/about_image_usha.png",
-  alt: "Portrait of Ushaswini Munupaly styling a bridal look",
+  alt: "Portrait of Ushaswini Munupally styling a bridal look",
 };
 
 export const ROLES = [
@@ -361,19 +361,19 @@ export const WORKS: Work[] = [
     },
   },
   {
-    cat: "campaign",
-    caption: "",
+    cat: "msu",
+    caption: "Mysore Saree Udyog · Festive Edit",
     img: {
-      src: "/assets/campaign/8.png",
-      fallback: "/assets/placeholders/work-campaign-1.svg",
-      alt: "Festive campaign styling — portrait in a red and gold silk saree",
+      src: "/assets/placeholders/mysore_saree_udyog_2.png",
+      fallback: "/assets/placeholders/work-msu-2.svg",
+      alt: "Mysore Saree Udyog lookbook — bride in traditional red wedding attire holding flowers",
     },
   },
   {
-    cat: "campaign",
+    cat: "editorial",
     caption: "",
     img: {
-      src: "/assets/placeholders/campain.png",
+      src: "/assets/editorial/4.png",
       fallback: "/assets/placeholders/work-campaign-1.svg",
       alt: "Festive campaign styling — portrait in a red and gold silk saree",
     },
@@ -406,10 +406,10 @@ export const WORKS: Work[] = [
     },
   },
   {
-    cat: "editorial",
+    cat: "campaign",
     caption: "",
     img: {
-      src: "/assets/editorial/4.png",
+      src: "/assets/placeholders/campain.png",
       fallback: "/assets/placeholders/work-campaign-1.svg",
       alt: "Festive campaign styling — portrait in a red and gold silk saree",
     },
@@ -469,12 +469,12 @@ export const WORKS: Work[] = [
     },
   },
   {
-    cat: "msu",
-    caption: "Mysore Saree Udyog · Festive Edit",
+    cat: "campaign",
+    caption: "",
     img: {
-      src: "/assets/placeholders/mysore_saree_udyog_2.png",
-      fallback: "/assets/placeholders/work-msu-2.svg",
-      alt: "Mysore Saree Udyog lookbook — bride in traditional red wedding attire holding flowers",
+      src: "/assets/campaign/8.png",
+      fallback: "/assets/placeholders/work-campaign-1.svg",
+      alt: "Festive campaign styling — portrait in a red and gold silk saree",
     },
   },
 ];
