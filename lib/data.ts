@@ -286,22 +286,139 @@ export type WorkCategory = "campaign" | "editorial" | "msu" | "jewellery" | "cat
 
 export const WORK_FILTERS: { id: WorkCategory | "all"; label: string }[] = [
   { id: "all", label: "All" },
+  { id: "msu", label: "Mysore Saree Udyog" },
   { id: "campaign", label: "Campaign" },
   { id: "editorial", label: "Editorial" },
-  { id: "msu", label: "Mysore Saree Udyog" },
   { id: "jewellery", label: "Jewellery" },
-  { id: "catalog", label: "Product & Catalog" },
-  { id: "bts", label: "Behind the Scenes" },
+  // { id: "catalog", label: "Product & Catalog" },
+  // { id: "bts", label: "Behind the Scenes" },
 ];
 
 export type Work = { cat: WorkCategory; caption: string; img: Img };
 
 export const WORKS: Work[] = [
+   {
+    cat: "campaign",
+    caption: "",
+    img: {
+      src: "/assets/campaign/1.png",
+      fallback: "/assets/placeholders/work-campaign-1.svg",
+      alt: "Festive campaign styling — portrait in a red and gold silk saree",
+    },
+  },
   {
     cat: "campaign",
-    caption: "Festive Campaign · Styling & Direction",
+    caption: "",
+    img: {
+      src: "/assets/campaign/2.png",
+      fallback: "/assets/placeholders/work-campaign-1.svg",
+      alt: "Festive campaign styling — portrait in a red and gold silk saree",
+    },
+  },
+  {
+    cat: "campaign",
+    caption: "",
+    img: {
+      src: "/assets/campaign/3.png",
+      fallback: "/assets/placeholders/work-campaign-1.svg",
+      alt: "Festive campaign styling — portrait in a red and gold silk saree",
+    },
+  },
+  {
+    cat: "campaign",
+    caption: "",
+    img: {
+      src: "/assets/campaign/4.png",
+      fallback: "/assets/placeholders/work-campaign-1.svg",
+      alt: "Festive campaign styling — portrait in a red and gold silk saree",
+    },
+  },
+  {
+    cat: "campaign",
+    caption: "",
+    img: {
+      src: "/assets/campaign/5.png",
+      fallback: "/assets/placeholders/work-campaign-1.svg",
+      alt: "Festive campaign styling — portrait in a red and gold silk saree",
+    },
+  },
+  {
+    cat: "campaign",
+    caption: "",
+    img: {
+      src: "/assets/campaign/6.png",
+      fallback: "/assets/placeholders/work-campaign-1.svg",
+      alt: "Festive campaign styling — portrait in a red and gold silk saree",
+    },
+  },
+  {
+    cat: "campaign",
+    caption: "",
+    img: {
+      src: "/assets/campaign/7.png",
+      fallback: "/assets/placeholders/work-campaign-1.svg",
+      alt: "Festive campaign styling — portrait in a red and gold silk saree",
+    },
+  },
+  {
+    cat: "campaign",
+    caption: "",
+    img: {
+      src: "/assets/campaign/8.png",
+      fallback: "/assets/placeholders/work-campaign-1.svg",
+      alt: "Festive campaign styling — portrait in a red and gold silk saree",
+    },
+  },
+  {
+    cat: "campaign",
+    caption: "",
     img: {
       src: "/assets/placeholders/campain.png",
+      fallback: "/assets/placeholders/work-campaign-1.svg",
+      alt: "Festive campaign styling — portrait in a red and gold silk saree",
+    },
+  },
+  {
+    cat: "editorial",
+    caption: "",
+    img: {
+      src: "/assets/editorial/1.png",
+      fallback: "/assets/placeholders/work-campaign-1.svg",
+      alt: "Festive campaign styling — portrait in a red and gold silk saree",
+    },
+  },
+  {
+    cat: "editorial",
+    caption: "",
+    img: {
+      src: "/assets/editorial/2.png",
+      fallback: "/assets/placeholders/work-campaign-1.svg",
+      alt: "Festive campaign styling — portrait in a red and gold silk saree",
+    },
+  },
+  {
+    cat: "editorial",
+    caption: "",
+    img: {
+      src: "/assets/editorial/3.png",
+      fallback: "/assets/placeholders/work-campaign-1.svg",
+      alt: "Festive campaign styling — portrait in a red and gold silk saree",
+    },
+  },
+  {
+    cat: "editorial",
+    caption: "",
+    img: {
+      src: "/assets/editorial/4.png",
+      fallback: "/assets/placeholders/work-campaign-1.svg",
+      alt: "Festive campaign styling — portrait in a red and gold silk saree",
+    },
+  },
+  {
+    cat: "editorial",
+    caption: "",
+    img: {
+      src: "/assets/editorial/5.png",
       fallback: "/assets/placeholders/work-campaign-1.svg",
       alt: "Festive campaign styling — portrait in a red and gold silk saree",
     },
@@ -340,15 +457,6 @@ export const WORKS: Work[] = [
       src: "/assets/placeholders/editorial_2.png",
       fallback: "/assets/placeholders/work-editorial-2.svg",
       alt: "Editorial styling — portrait in a red and gold saree",
-    },
-  },
-  {
-    cat: "campaign",
-    caption: "Couple Campaign · Creative Direction",
-    img: {
-      src: "https://images.unsplash.com/photo-1781077127473-343904bb5856?q=90&w=1600&auto=format&fit=crop",
-      fallback: "/assets/placeholders/work-campaign-2.svg",
-      alt: "Couple campaign styling — coordinated wedding looks in a garden setting",
     },
   },
   {
@@ -443,7 +551,7 @@ export const CONTACT = {
   instagram: "_ushaswini",
   phone: "+91 77806 81331",
   phoneHref: "+917780681331",
-  email: "hello@ushaswinistyles.com",
+  email: "styledbyushaswini@gmail.com",
   whatsappText:
     "Hi Ushaswini, I'd love to talk about styling for my wedding.",
 };

@@ -42,7 +42,7 @@ export default function Navbar() {
         >
           Ushaswini{" "}
           <span className={`italic ${solid ? "text-gold" : "text-champagne"}`}>
-            Munupaly
+            Munupally
           </span>
         </a>
 
@@ -86,7 +86,7 @@ export default function Navbar() {
           <span
             className={`h-[1.5px] w-[26px] transition-transform duration-300 ${
               solid ? "bg-kumkum" : "bg-ivory"
-            } ${open ? "-translate-y-[3.75px] -rotate-45" : ""}`}
+            } ${open ? "translate-y-[3.75px] -rotate-45" : ""}`}
           />
         </button>
       </div>

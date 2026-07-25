@@ -59,7 +59,7 @@ export default function Portfolio() {
 
         <div className="reveal d3 columns-1 gap-5 sm:columns-2 lg:columns-3">
           {visible.map((work) => (
-            <figure key={work.caption} className="mb-5 break-inside-avoid">
+            <figure key={work.img.src} className="mb-5 break-inside-avoid">
               <button
                 type="button"
                 className="work-btn block w-full cursor-pointer text-left"
