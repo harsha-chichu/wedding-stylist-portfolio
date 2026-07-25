@@ -434,6 +434,15 @@ export const WORKS: Work[] = [
   },
   {
     cat: "msu",
+    caption: "",
+    img: {
+      src: "/assets/msu/5.png",
+      fallback: "/assets/placeholders/work-campaign-1.svg",
+      alt: "Festive campaign styling — portrait in a red and gold silk saree",
+    },
+  },
+  {
+    cat: "msu",
     caption: "Mysore Saree Udyog · Silk Collection",
     img: {
       src: "/assets/placeholders/mysore_saree_udyog.png",
@@ -474,6 +483,16 @@ export const WORKS: Work[] = [
     img: {
       src: "/assets/msu/4.png",
       fallback: "/assets/placeholders/work-campaign-1.svg",
+      alt: "Festive campaign styling — portrait in a red and gold silk saree",
+    },
+  },
+
+  {
+    cat: "jewellery",
+    caption: "",
+    img: {
+      src: "/assets/jewellery/1.png",
+      fallback: "/assets/placeholders/work-jewellery-1.svg",
       alt: "Festive campaign styling — portrait in a red and gold silk saree",
     },
   },
